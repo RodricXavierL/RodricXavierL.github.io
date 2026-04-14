@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stopwatch</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="background">
+    <!--
+    <span class="horizontal">
+      <label class="center">Your math score</label>
+      <input type="number" id="math" placeholder="Enter a number">
+      <button onclick="save('math')">Submit</button>
+      <p id="outputArea"></p>
+
+      <label class="center">Your science score</label>
+      <input type="number" id="science" placeholder="Enter a number">
+      <button onclick="save('science')">Submit</button>
+      <p id="outputArea"></p>
+
+      <label class="center">Your english score</label>
+      <input type="number" id="english" placeholder="Enter a number">
+      <button onclick="save('english')">Submit</button>
+      <p id="outputArea"></p>
+    </span>
+    -->
+    <table id="tableroot">
+      <tr>
+        <th>Subject</th>
+        <th>Formative 1</th>
+        <th>Summative 1</th>
+        <th>Formative 2</th>
+      </tr>
+      <tr>
+        <td>Math</td>
+        <td><input type="number" name="MF1"></td> <!--(M)ath (F)ormative (1) = MF1 -->
+        <td><input type="number" name="MS1"></td>
+        <td><input type="number" name="MF2"></td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td><input type="number" name="SF1"></td>
+        <td><input type="number" name="SS1"></td>
+        <td><input type="number" name="SF2"></td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td><input type="number" name="EF1"></td>
+        <td><input type="number" name="ES1"></td>
+        <td><input type="number" name="EF2"></td>
+      </tr>
+    </table>
+    <center>
+      <button onclick="tablesave()">Submit</button>
+    </center>
+
+    <div>
+
+      <label class="size">How much time do you have to study everyday?</label>
+      <input type="number" id="hours" placeholder="Hours">
+      <button onclick="calculatev2()">Submit</button>
+      <p id="outputArea"></p>
+
+      <h1 id="output" class="tempatoutput">This is how much time you should study:</h1>
+      <h3 id="outputmath">Math:</h3>
+      <h3 id="outputscience">Science:</h3>
+      <h3 id="outputenglish">English:</h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
